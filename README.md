@@ -132,4 +132,4 @@ npm test
 
 ## Autor
 
-* **Daniel "Ren_Angel" Medrado de Morais**
+* **Daniel "Ren Angel" Medrado de Morais**
