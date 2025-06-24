@@ -1,0 +1,195 @@
+.dashboard-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffeded;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  height: 40px;
+}
+
+.logout-container {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button {
+  background-color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logout-button img {
+  margin-right: 8px;
+  height: 16px;
+}
+
+.main {
+  padding: 20px;
+  background-color: #ffeded;
+}
+
+.funcoes-topo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.adicionar-button,
+.pagamentos-button,
+.excel-button {
+  background-color: #ef233c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.adicionar-button img,
+.pagamentos-button img,
+.excel-button img {
+  margin-right: 8px;
+  height: 18px;
+}
+
+.searchbar, .searchbar-loading {
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+.searchbar {
+  position: relative;
+}
+
+.searchbar-loading {
+  position: unset ;
+}
+
+.searchbar input, .searchbar-loading input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.searchbar ul, .searchbar-loading ul {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style-type: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.searchbar ul:empty, .searchbar-loading ul:empty {
+  border: none;
+}
+
+.searchbar ul li, .searchbar-loading ul li {
+  padding: 0;
+}
+
+.searchbar ul li button, .searchbar-loading ul li button {
+  background:none;
+  border:none;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  display: block;
+}
+
+.searchbar ul li:hover, .searchbar-loading ul li:hover {
+  background-color: #f5f5f5;
+}
+
+
+.search-button {
+  margin-left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button img {
+  height: 18px;
+}
+
+.alunos-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.alunos-table thead {
+  background-color: #e3e3e3;
+}
+
+.alunos-table th, .alunos-table td {
+  padding: 15px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.alunos-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.alunos-table .pagar-button,
+.alunos-table .editar-button,
+.alunos-table .deletar-button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagar-button {
+  background-color: purple;
+  color: white;
+}
+
+.editar-button {
+  background-color: green;
+  color: white;
+  margin-left: 5px;
+}
+
+.deletar-button {
+  background-color: #bb0a1e;
+  color: white;
+  margin-left: 5px;
+}
+
+.alunos-table img {
+  height: 18px;
+}
